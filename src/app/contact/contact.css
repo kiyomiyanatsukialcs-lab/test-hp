@@ -1,0 +1,61 @@
+/* =========================================================
+   富士にじいろ保育園 — Contact page
+   ========================================================= */
+.contact-main { padding-top: clamp(120px, 16vh, 180px); padding-bottom: var(--section-y); }
+.contact-hero { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 6vw, 90px); align-items: end; margin-bottom: clamp(56px, 8vw, 110px); }
+@media (max-width: 900px){ .contact-hero{ grid-template-columns: 1fr; gap: 32px; } }
+.contact-hero .lead { margin-top: 26px; }
+.contact-hero .col-img .image-slot { width: 100%; aspect-ratio: 16/9; }
+
+.form-grid { display: grid; grid-template-columns: 0.42fr 1fr; gap: clamp(28px, 6vw, 90px); align-items: start; }
+@media (max-width: 900px){ .form-grid{ grid-template-columns: 1fr; gap: 40px; } }
+
+.field { margin-bottom: 30px; }
+.field label { display: block; font-size: 12px; letter-spacing: 0.14em; color: var(--ink-60); margin-bottom: 12px; }
+.field label .req { color: var(--blue); font-family: var(--serif); font-style: italic; margin-left: 8px; font-size: 11px; }
+.field input, .field textarea, .field select {
+  width: 100%; background: transparent; border: 0; border-bottom: 1px solid var(--line);
+  padding: 12px 2px; font-family: var(--sans); font-weight: 300; font-size: 16px; color: var(--ink);
+  letter-spacing: 0.04em; border-radius: 0; transition: border-color 0.4s var(--ease);
+  -webkit-appearance: none; appearance: none;
+}
+.field textarea { resize: vertical; min-height: 120px; line-height: 1.9; }
+.field input:focus, .field textarea:focus, .field select:focus { outline: none; border-bottom-color: var(--blue); }
+.field input::placeholder, .field textarea::placeholder { color: var(--ink-45); }
+.field.invalid input, .field.invalid textarea, .field.invalid select { border-bottom-color: #c0392b; }
+.field .err { font-size: 11px; color: #c0392b; margin-top: 8px; letter-spacing: 0.06em; opacity: 0; max-height: 0; transition: opacity 0.3s; }
+.field.invalid .err { opacity: 1; max-height: 30px; }
+
+.field-row { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(20px, 3vw, 40px); }
+@media (max-width: 560px){ .field-row{ grid-template-columns: 1fr; gap: 0; } }
+
+.radio-set { display: flex; flex-wrap: wrap; gap: 10px; }
+.radio-set label {
+  margin: 0; padding: 12px 20px; border: 1px solid var(--line); font-size: 13px; letter-spacing: 0.06em;
+  cursor: pointer; transition: all 0.35s var(--ease); color: var(--ink-60);
+}
+.radio-set input { position: absolute; opacity: 0; pointer-events: none; }
+.radio-set label:hover { border-color: var(--blue); color: var(--ink); }
+.radio-set label.on { background: var(--blue); border-color: var(--blue); color: #fff; }
+
+.form-aside .info-row .v.tel { font-family: var(--serif); font-size: 22px; }
+.form-side-note { font-size: 12.5px; color: var(--ink-45); line-height: 2; margin-top: 28px; }
+
+.submit-row { margin-top: 16px; display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+.submit-row .btn { padding: 18px 44px; }
+.submit-row .note { font-size: 11.5px; color: var(--ink-45); letter-spacing: 0.06em; }
+
+.form-success {
+  display: none; border: 1px solid var(--blue); padding: clamp(36px, 6vw, 64px);
+  text-align: center; position: relative; overflow: hidden;
+}
+.form-success.show { display: block; animation: fadeUp 0.8s var(--ease-out); }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+.form-success .spectrum-line { width: min(70vw, 720px); height: 1px; margin: 28px auto 0;
+  background: linear-gradient(90deg,#e15b5b,#e0a14a,#d9cf57,#5bb673,#4a8fd0,#7d6bd0); }
+.form-success h3 { font-size: clamp(22px, 3vw, 34px); font-weight: 200; }
+.form-success p { color: var(--ink-60); margin: 18px auto 0; max-width: 42ch; font-size: 14.5px; line-height: 2; }
+.form-success .ico { font-family: var(--serif); font-style: italic; color: var(--blue); font-size: 13px; letter-spacing: 0.3em; }
+
+.back-link { display: inline-flex; align-items: center; gap: 10px; font-size: 12px; letter-spacing: 0.14em; color: var(--ink-60); margin-bottom: 40px; transition: gap 0.4s var(--ease); }
+.back-link:hover { gap: 16px; color: var(--blue); }
