@@ -5,13 +5,14 @@ import { usePathname } from 'next/navigation';
 
 const NAV_ITEMS = [
   { n: '01', label: 'OVERVIEW', ja: '概要', hash: '#overview' },
-  { n: '02', label: 'SPACE', ja: '空間', hash: '#space' },
-  { n: '03', label: 'ROUTINE', ja: '一日の流れ', hash: '#routine' },
-  { n: '04', label: 'CONCEPT', ja: '保育理念', hash: '#concept' },
-  { n: '05', label: 'CLASS', ja: '教室', hash: '#class' },
-  { n: '06', label: 'GALLERY', ja: '日々の記録', hash: '#gallery' },
-  { n: '07', label: 'FAQ', ja: 'よくある質問', hash: '#faq' },
-  { n: '08', label: 'ACCESS', ja: 'アクセス', hash: '#access' },
+  { n: '02', label: 'NEWS', ja: 'お知らせ', hash: '#news' },
+  { n: '03', label: 'SPACE', ja: '空間', hash: '#space' },
+  { n: '04', label: 'ROUTINE', ja: '一日の流れ', hash: '#routine' },
+  { n: '05', label: 'CONCEPT', ja: '保育理念', hash: '#concept' },
+  { n: '06', label: 'CLASS', ja: '教室', hash: '#class' },
+  { n: '07', label: 'GALLERY', ja: '日々の記録', hash: '#gallery' },
+  { n: '08', label: 'FAQ', ja: 'よくある質問', hash: '#faq' },
+  { n: '09', label: 'ACCESS', ja: 'アクセス', hash: '#access' },
 ];
 
 export default function Header() {
@@ -47,7 +48,7 @@ export default function Header() {
   const scrollTo = (hash: string) => {
     const target = document.querySelector(hash);
     if (!target) return;
-    const top = target.getBoundingClientRect().top + window.scrollY - 64;
+    const top = target.getBoundingClientRect().top + window.scrollY + 32;
     window.scrollTo({ top, behavior: 'smooth' });
   };
 

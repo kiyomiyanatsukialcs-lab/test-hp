@@ -29,7 +29,7 @@ export default function AccessSection() {
       <div className="wrap">
         <div className="sec-head" style={{ marginBottom: 'clamp(40px,5vw,64px)' }}>
           <span className="eyebrow" data-reveal="text">
-            <span className="idx">08</span> ACCESS <span className="ja">アクセス・お問い合わせ</span>
+            <span className="idx">09</span> ACCESS <span className="ja">アクセス・お問い合わせ</span>
           </span>
           <h2 className="section-title" data-reveal="text" data-delay="1">
             アクセス・

@@ -2,13 +2,14 @@ import Link from 'next/link';
 
 const NAV_ITEMS = [
   { n: '01', label: 'OVERVIEW', hash: '#overview' },
-  { n: '02', label: 'SPACE', hash: '#space' },
-  { n: '03', label: 'ROUTINE', hash: '#routine' },
-  { n: '04', label: 'CONCEPT', hash: '#concept' },
-  { n: '05', label: 'CLASS', hash: '#class' },
-  { n: '06', label: 'GALLERY', hash: '#gallery' },
-  { n: '07', label: 'FAQ', hash: '#faq' },
-  { n: '08', label: 'ACCESS', hash: '#access' },
+  { n: '02', label: 'NEWS', hash: '#news' },
+  { n: '03', label: 'SPACE', hash: '#space' },
+  { n: '04', label: 'ROUTINE', hash: '#routine' },
+  { n: '05', label: 'CONCEPT', hash: '#concept' },
+  { n: '06', label: 'CLASS', hash: '#class' },
+  { n: '07', label: 'GALLERY', hash: '#gallery' },
+  { n: '08', label: 'FAQ', hash: '#faq' },
+  { n: '09', label: 'ACCESS', hash: '#access' },
 ];
 
 const RIBBON_COLORS = ['#e15b5b', '#e0a14a', '#d9cf57', '#5bb673', '#4a8fd0', '#7d6bd0'];

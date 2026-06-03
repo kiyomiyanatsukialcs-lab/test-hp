@@ -204,9 +204,7 @@ h1, h2, h3 { font-weight: 300; margin: 0; letter-spacing: 0.02em; }
   border-bottom: 1px solid transparent;
 }
 .site-header.scrolled {
-  background: rgba(245, 245, 247, 0.78);
-  backdrop-filter: blur(18px) saturate(120%);
-  -webkit-backdrop-filter: blur(18px) saturate(120%);
+  background: rgb(245, 245, 247);
   border-bottom-color: var(--line);
 }
 .header-inner {
@@ -327,7 +325,32 @@ body.menu-open .mobile-menu { opacity: 1; pointer-events: auto; transform: none;
 .sec-head { display: flex; flex-direction: column; gap: 22px; max-width: 64ch; }
 .sec-head .section-title { margin-top: 4px; }
 
-/* ===== 02 SPACE ===== */
+/* ===== 02 NEWS ===== */
+.news-rail-item {
+  border: 1px solid var(--line);
+  padding: clamp(24px, 3vw, 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 180px;
+  cursor: grab;
+}
+.news-date {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 12px;
+  color: var(--blue);
+  letter-spacing: 0.12em;
+}
+.news-title {
+  font-size: clamp(16px, 1.6vw, 21px);
+  font-weight: 300;
+  line-height: 1.65;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+/* ===== 03 SPACE ===== */
 #space { padding-bottom: clamp(72px, 9vw, 140px); }
 .space-intro {
   display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(28px, 6vw, 90px);
@@ -361,7 +384,7 @@ body.menu-open .mobile-menu { opacity: 1; pointer-events: auto; transform: none;
 }
 .space-message .big em { font-style: normal; color: var(--blue); }
 
-/* ===== 03 ROUTINE ===== */
+/* ===== 04 ROUTINE ===== */
 .routine-grid { display: grid; grid-template-columns: 0.5fr 1fr; gap: clamp(30px, 7vw, 110px); }
 @media (max-width: 900px){ .routine-grid{ grid-template-columns: 1fr; gap: 48px; } }
 .timeline { position: relative; }
@@ -382,7 +405,7 @@ body.menu-open .mobile-menu { opacity: 1; pointer-events: auto; transform: none;
 .tl-body .note { font-size: 12px; color: var(--ink-45); margin-top: 10px; letter-spacing: 0.06em; }
 .tl-open .tl-time, .tl-close .tl-time { color: var(--blue); font-style: normal; letter-spacing: 0.1em; }
 
-/* ===== 04 CONCEPT ===== */
+/* ===== 05 CONCEPT ===== */
 .concept-list { border-top: 1px solid var(--line); }
 .concept-row {
   display: grid; grid-template-columns: 120px 1fr 1.3fr; gap: clamp(16px,3vw,48px);
@@ -400,7 +423,7 @@ body.menu-open .mobile-menu { opacity: 1; pointer-events: auto; transform: none;
   .concept-row p{ grid-column: 1 / -1; }
 }
 
-/* ===== 05 CLASS ===== */
+/* ===== 06 CLASS ===== */
 .class-block { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(28px, 6vw, 88px); align-items: center; }
 .class-block + .class-block { margin-top: clamp(56px, 9vw, 130px); }
 .class-block .image-slot { width: 100%; aspect-ratio: 16/9; }
@@ -409,7 +432,7 @@ body.menu-open .mobile-menu { opacity: 1; pointer-events: auto; transform: none;
 .class-txt .kicker { font-family: var(--serif); font-style: italic; color: var(--blue); letter-spacing: 0.2em; font-size: 13px; }
 .class-txt h3 { font-size: clamp(24px, 3vw, 40px); font-weight: 200; margin: 14px 0 22px; }
 
-/* ===== 06 GALLERY ===== */
+/* ===== 07 GALLERY ===== */
 .gallery-sec { background: var(--beige); }
 .ig-head { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 40px; }
 .ig-id { display: flex; align-items: center; gap: 18px; }
@@ -430,7 +453,7 @@ body.menu-open .mobile-menu { opacity: 1; pointer-events: auto; transform: none;
 .ig-cell .ov span { display: inline-flex; align-items: center; gap: 7px; }
 .ig-foot { margin-top: 36px; display:flex; justify-content:center; }
 
-/* ===== 07 FAQ ===== */
+/* ===== 08 FAQ ===== */
 .faq-grid { display: grid; grid-template-columns: 0.5fr 1fr; gap: clamp(28px, 7vw, 100px); align-items: start; }
 @media (max-width: 900px){ .faq-grid{ grid-template-columns: 1fr; gap: 40px; } }
 .faq-list { border-top: 1px solid var(--line); }
@@ -450,7 +473,7 @@ body.menu-open .mobile-menu { opacity: 1; pointer-events: auto; transform: none;
 .faq-a-inner { padding: 0 44px 30px 44px; color: var(--ink-60); font-size: 14.5px; line-height: 2.05; }
 @media (max-width:560px){ .faq-a-inner{ padding-left: 0; } }
 
-/* ===== 08 ACCESS ===== */
+/* ===== 09 ACCESS ===== */
 .access-grid { display: grid; grid-template-columns: 1.25fr 0.75fr; gap: clamp(28px, 5vw, 70px); align-items: stretch; }
 @media (max-width: 900px){ .access-grid{ grid-template-columns: 1fr; } }
 .map-mock {

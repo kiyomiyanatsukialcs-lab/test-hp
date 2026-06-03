@@ -61,7 +61,7 @@ export default function SpaceSection() {
         <div className="space-intro">
           <div className="col-txt">
             <span className="eyebrow" data-reveal="text">
-              <span className="idx">02</span> SPACE <span className="ja">空間</span>
+              <span className="idx">03</span> SPACE <span className="ja">空間</span>
             </span>
             <h2 className="section-title" data-reveal="text" data-delay="1">
               余白が、

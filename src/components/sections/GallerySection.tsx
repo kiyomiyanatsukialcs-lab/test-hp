@@ -17,7 +17,7 @@ export default function GallerySection() {
       <div className="wrap">
         <div className="sec-head" style={{ marginBottom: 'clamp(36px,5vw,60px)' }}>
           <span className="eyebrow" data-reveal="text">
-            <span className="idx">06</span> GALLERY <span className="ja">日々の記録</span>
+            <span className="idx">07</span> GALLERY <span className="ja">日々の記録</span>
           </span>
           <h2 className="section-title" data-reveal="text" data-delay="1">
             DAILY MOMENTS

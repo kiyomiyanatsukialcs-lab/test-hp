@@ -6,7 +6,7 @@ export default function ClassSection() {
       <div className="wrap">
         <div className="sec-head" style={{ marginBottom: 'clamp(44px,7vw,90px)' }}>
           <span className="eyebrow" data-reveal="text">
-            <span className="idx">05</span> CLASS <span className="ja">体操・音楽教室</span>
+            <span className="idx">06</span> CLASS <span className="ja">体操・音楽教室</span>
           </span>
           <h2 className="section-title" data-reveal="text" data-delay="1">
             体験から、

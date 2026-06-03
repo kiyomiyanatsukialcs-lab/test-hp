@@ -47,7 +47,7 @@ export default function RoutineSection() {
         <div className="routine-grid">
           <div className="sec-head">
             <span className="eyebrow" data-reveal="text">
-              <span className="idx">03</span> ROUTINE <span className="ja">一日の流れ</span>
+              <span className="idx">04</span> ROUTINE <span className="ja">一日の流れ</span>
             </span>
             <h2 className="section-title" data-reveal="text" data-delay="1">
               一日の流れ

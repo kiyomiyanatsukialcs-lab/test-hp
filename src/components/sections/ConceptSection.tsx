@@ -32,7 +32,7 @@ export default function ConceptSection() {
       <div className="wrap">
         <div className="sec-head" style={{ marginBottom: 'clamp(40px,6vw,72px)' }}>
           <span className="eyebrow" data-reveal="text">
-            <span className="idx">04</span> CONCEPT <span className="ja">保育理念</span>
+            <span className="idx">05</span> CONCEPT <span className="ja">保育理念</span>
           </span>
           <h2 className="section-title" data-reveal="text" data-delay="1">
             わたしたちが、
